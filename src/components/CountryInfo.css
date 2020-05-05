@@ -1,0 +1,138 @@
+/* font-family: 'Alegreya', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Marcellus SC', serif;
+font-family: 'Marcellus', serif;
+font-family: 'Bellefair', serif; */
+p,
+span,
+sup,
+ul,
+li {
+  font-family: 'Marcellus', serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.ext {
+  display: flex;
+  justify-content: center;
+}
+
+.country-card {
+  margin-top: 20px;
+  border: 1px solid rgb(20, 11, 143);
+  max-width: 350px;
+}
+
+.country-flag {
+  display: flex;
+  justify-content: center;
+}
+.country-flag img {
+  width: 350px;
+  height: auto;
+  border-bottom: 1px solid rgb(20, 11, 143);
+}
+
+.country-name h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 900;
+  text-align: center;
+}
+
+.subtitle {
+  margin: -2px 0 10px 0;
+  padding: 0;
+  text-align: center;
+  color: rgb(104, 101, 101);
+  font-size: 0.8em;
+}
+
+.region-sub-region {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cap-den-area-pop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top: 0.5px dotted rgb(20, 11, 143);
+  margin: 20px 0 10px 0;
+}
+
+.cap-den-area-pop-div:first-child {
+  padding-top: 10px;
+}
+
+.cap-den-area-pop p {
+  padding: 5px 0;
+}
+
+.lang-title,
+.currencies-title,
+.borders-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 0.5px dotted rgb(20, 11, 143);
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.lang,
+.currencies,
+.borders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.lang ul,
+.currencies ul,
+.borders ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+.lang li,
+.currencies li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border: 1px solid rgb(8, 2, 73);
+  border-radius: 20px;
+  background-color: rgb(20, 11, 143);
+  color: white;
+  font-size: 0.8em;
+}
+
+.borders li {
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+
+.border-flag {
+  width: 20px;
+  height: auto;
+}
