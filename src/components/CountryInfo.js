@@ -81,16 +81,20 @@ class CountryInfo extends React.Component {
             </div>
             <div className="borders">
               <ul>
-                {selectedCountryInfo.borders.map((border) => (
-                  <li>
-                    {getCodeName(border)}{' '}
-                    <img
-                      className="border-flag"
-                      src={getCodeFlag(border)}
-                      alt="border country flag"
-                    />
-                  </li>
-                ))}
+                {selectedCountryInfo.borders.length === 0 ? (
+                  <p>this country has no border</p>
+                ) : (
+                  selectedCountryInfo.borders.map((border) => (
+                    <li>
+                      {getCodeName(border)}{' '}
+                      <img
+                        className="border-flag"
+                        src={getCodeFlag(border)}
+                        alt="border country flag"
+                      />
+                    </li>
+                  ))
+                )}
               </ul>
             </div>
           </div>
