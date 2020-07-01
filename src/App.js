@@ -41,21 +41,17 @@ class App extends React.Component {
 
   getCodeName = (border) => {
     const { countries } = this.state;
-    const countryBorder = countries.filter((country) => {
-      if (border === country.alpha3Code) {
-        return country.name;
-      }
-    });
+    const countryBorder = countries.filter((country) =>
+      border === country.alpha3Code ? country.name : '',
+    );
     return countryBorder[0].name;
   };
 
   getCodeFlag = (border) => {
     const { countries } = this.state;
-    const countryBorder = countries.filter((country) => {
-      if (border === country.alpha3Code) {
-        return country.flag;
-      }
-    });
+    const countryBorder = countries.filter((country) =>
+      border === country.alpha3Code ? country.flag : '',
+    );
     return countryBorder[0].flag;
   };
 
