@@ -1,2 +1,2 @@
 # Country-Information App: 
-country-information.netlify.app
+https://country-information.netlify.app/
