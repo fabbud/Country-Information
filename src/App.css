@@ -1,0 +1,25 @@
+.right {
+  height: 1000px;
+  background-color: #ff0000;
+  width: 30%;
+}
+
+.left {
+  height: 1000px;
+  background-color: #006600;
+  width: 30%;
+}
+
+.app-center {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.master-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

@@ -4,7 +4,7 @@ import './CountrySelect.css';
 function CountrySelect(props) {
   const { countryNamesList, selectedCountry, handleSelectCountry } = props;
   return (
-    <div className="select-div">
+    <div className="select-area">
       <select
         className="select-country"
         name="countryList"

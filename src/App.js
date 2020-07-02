@@ -58,19 +58,23 @@ class App extends React.Component {
   render() {
     const { countries } = this.state;
     return (
-      <div>
-        <CountrySelect
-          countryNamesList={countries.map((country) => country.name)}
-          selectedCountry={this.state.selectedCountry}
-          handleSelectCountry={this.handleSelectCountry}
-        />
-        <CountryInfo
-          selectedCountryInfo={this.state.selectedCountryInfo}
-          getSelectedCountryInfo={this.getSelectedCountryInfo}
-          selectedCountry={this.state.selectedCountry}
-          getCodeName={this.getCodeName}
-          getCodeFlag={this.getCodeFlag}
-        />
+      <div className="master-div">
+        <div className="left"></div>
+        <div className="app-center">
+          <CountrySelect
+            countryNamesList={countries.map((country) => country.name)}
+            selectedCountry={this.state.selectedCountry}
+            handleSelectCountry={this.handleSelectCountry}
+          />
+          <CountryInfo
+            selectedCountryInfo={this.state.selectedCountryInfo}
+            getSelectedCountryInfo={this.getSelectedCountryInfo}
+            selectedCountry={this.state.selectedCountry}
+            getCodeName={this.getCodeName}
+            getCodeFlag={this.getCodeFlag}
+          />
+        </div>
+        <div className="right"></div>
       </div>
     );
   }
